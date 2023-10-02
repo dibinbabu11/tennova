@@ -9,8 +9,6 @@ class Recipie(models.Model):
     difficulty=models.CharField(max_length=500)
     vegetarian=models.BooleanField(default=True)
 
-    def get_url(self):
-        return reverse('Recipies:detail',args=[self.slug])
 
 
     class Meta:
